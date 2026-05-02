@@ -1,7 +1,8 @@
+ARG SEMAPHORE_VERSION=latest
 ARG SOPS_VERSION=3.12.2
 ARG AGE_VERSION=1.3.1
 
-FROM semaphoreui/semaphore:latest
+FROM semaphoreui/semaphore:${SEMAPHORE_VERSION}
 
 ARG SOPS_VERSION
 ARG AGE_VERSION
